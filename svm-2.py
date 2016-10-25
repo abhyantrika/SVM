@@ -16,8 +16,6 @@ model = svm.SVC(kernel ='rbf',C=1,gamma = 30)
 model.fit(x,y) 									# HIGH GAMMA NEEDED TO FIT!!!
 print 'Score is','='*10+'>',model.score(x,y)
 
-
-""" These are plotting stuff. Need to learn these!"""
 x_min, x_max = x[:, 0].min() - 1, x[:, 0].max() + 1
 y_min, y_max = x[:, 1].min() - 1, x[:, 1].max() + 1
 xx,yy = np.meshgrid(np.arange(x_min, x_max, h),np.arange(y_min, y_max, h))
